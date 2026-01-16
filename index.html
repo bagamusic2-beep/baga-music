@@ -28,15 +28,23 @@
 <button onclick="goPremium()">⭐ Passer Premium</button>
 
 <script src="script.js"></script>
-<h2>🎵 Musiques</h2>
+<h2>🎵 Musique</h2>
 
-<div class="music-card">
-  <p><strong>Artiste :</strong> BAGA MUSIC</p>
-  <audio controls>
-    <source src="media/audio/test.mp3" type="audio/mpeg">
-    Votre navigateur ne supporte pas l’audio.
-  </audio>
-</div>
+<button onclick="playMusic()">▶️ Lire la musique</button>
+
+<audio id="player">
+  <source src="media/audio/test.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic() {
+  const audio = document.getElementById("player");
+  audio.play().catch(err => {
+    alert("Clique encore pour autoriser la lecture 🎵");
+  });
+}
+</script>
+
 <h2>🎬 Clips</h2>
 
 <video width="100%" controls>
