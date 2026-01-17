@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>BAGA MUSIC</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <meta charset="UTF-8">
+  <title>BAGA MUSIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .player {
+      background: #1c1c1c;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>🎶 BAGA MUSIC</h1>
-<p>Plateforme musicale africaine</p>
+  <h1>🎶 BAGA MUSIC</h1>
 
-<div class="card">
-    <h2>🎵 Musiques</h2>
-    <audio controls>
-        <source src="music.mp3" type="audio/mpeg">
+  <div class="player">
+    <p><strong>Titre :</strong> Test Music</p>
+
+    <audio controls preload="metadata">
+      <source src="media/audio/test.mp3" type="audio/mpeg">
+      Votre navigateur ne supporte pas l’audio.
     </audio>
-</div>
+  </div>
 
-<div class="card">
-    <h2>🎬 Clips</h2>
-    <video controls width="100%">
-        <source src="video.mp4" type="video/mp4">
-    </video>
-</div>
-
-<button onclick="goPremium()">⭐ Passer Premium</button>
-
-<script src="script.js"></script>
-<h2>🎵 Musiques</h2>
-
-<div class="music-card">
-  <p><strong>Artiste :</strong> BAGA MUSIC</p>
-  <audio controls>
-    <source src="media/audio/test.mp3" type="audio/mpeg">
-    Votre navigateur ne supporte pas l’audio.
-  </audio>
-  <a href="https://t.me/BAGA MUSIC_BOT?start=play_test">
-▶️ Écouter : BAGA MUSIC
-</a>
-</div>
-<h2>🎬 Clips</h2>
-
-<video width="100%" controls>
-  <source src="mdia/video/test.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la vidéo.
-</video>
 </body>
 </html>
